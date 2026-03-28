@@ -682,8 +682,7 @@ function redraw() {
   }
 
   ctx.strokeStyle = '#1a2535';
-  ctx.lineWidth = 0.1;
-  ctx.translate(0.5, 0.5);
+  ctx.lineWidth = 0.5;
   for (var x = 0; x <= panels*8; x++) {
     ctx.beginPath(); ctx.moveTo(x*S, 0); ctx.lineTo(x*S, 8*S); ctx.stroke();
   }
@@ -696,7 +695,6 @@ function redraw() {
   for (var p = 1; p < panels; p++) {
     ctx.beginPath(); ctx.moveTo(p*8*S, 0); ctx.lineTo(p*8*S, 8*S); ctx.stroke();
   }
-   ctx.setTransform(1,0,0,1,0,0);
   updateStatus();
   updateFrameLabel();
 }
