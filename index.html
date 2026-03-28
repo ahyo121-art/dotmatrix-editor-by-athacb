@@ -674,7 +674,7 @@ function redraw() {
           ctx.fillStyle = '#ffdd00';
           ctx.shadowColor = '#ffdd00';
           ctx.shadowBlur = 4;
-          ctx.fillRect(p*8*S + col*S + 1, row*S, S, S);
+          ctx.fillRect(p*8*S + col*S + 1, row*S + 1, S-2, S-2);
           ctx.shadowBlur = 0;
         }
       }
